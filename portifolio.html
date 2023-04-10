@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cassio Cavalcante</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1>Cassio Cavalcante</h1>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#about">Sobre Mim</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+          <div class="container">
+            <h2>Bem-vindo ao meu portfolio</h2>
+            <p>Meu portfólio apresenta meus trabalhos e habilidades.</p>
+            <p>Este site foi feito usando js, css e html e é apenas um projeto para apresentar onde realmente eu foco.</p>
+          </div>
+        </section>
+      
+        <section id="portfolio" class="section">
+          <div class="container">
+            <h2>Meu Portfólio</h2>
+            <div class="projects">
+              <div class="project">
+                <img src="https://placehold.it/500x300" alt="Projeto 1" />
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1</p>
+                <a href="#" class="button" onclick="expandir()">Ver Mais</a>
+                <div id="projeto1" style="display:none;">
+                  <p>Descrição completa do projeto 1</p>
+                  <p>Link para o projeto: <a href="#">link</a></p>
+                </div>
+              </div>
+              <div class="project">
+                <img src="https://placehold.it/500x300" alt="Project 2" />
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2</p>
+                <a href="#" class="button" onclick="expandir()">Ver Mais</a>
+                <div id="projeto2" style="display:none;">
+                  <p>Descrição completa do projeto 2</p>
+                  <p>Link para o projeto: <a href="#">link</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section id="about" class="section">
+          <div class="container">
+            <img src="Minhafoto.png" alt="Minha foto" />
+            <h2>Sobre Mim</h2>
+            <p>Descrição sobre mim</p>
+          </div>
+        </section>
+      
+        <section id="contact" class="section">
+          <div class="container">
+            <h2>Contato</h2>
+            <p>Meus detalhes de contato</p>
+          </div>
+        </section>
+      </main>
+      
+      <footer>
+        <div class="container">
+          <p>&copy; 2023 Meu Nome</p>
+        </div>
+      </footer>
+      
+      <script src="app.js"></script>
+      <script>
+        function expandir()
+        {
+        // Obter o elemento clicado
+        let botao = event.target;
+
+        // Obter o elemento irmão seguinte do botão
+        let descricaoProjeto = botao.nextElementSibling;
+
+        // Alternar a exibição da descrição do projeto
+        if (descricaoProjeto.style.display === "none") {
+        descricaoProjeto.style.display = "block";
+        botao.innerHTML = "Ver Menos";
+        } else {
+        descricaoProjeto.style.display = "none";
+        botao.innerHTML = "Ver Mais";
+        }
+        }
+    </script>
