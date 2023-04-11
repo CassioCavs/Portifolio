@@ -31,7 +31,7 @@
           <div class="container">
             <h2>Bem-vindo ao meu portfolio</h2>
             <p>Meu portfólio apresenta meus trabalhos e habilidades.</p>
-            <p>Este site foi feito usando js, css e html e é apenas um projeto para apresentar onde realmente eu foco.</p>
+            <p>Este site foi feito usando js, css e html e é apenas um projeto para me apresentar como profissional e experimentar tecnicas de programação.</p>
           </div>
         </section>
       
@@ -41,33 +41,62 @@
             <div class="projects">
               <div class="project">
                 <img src="https://placehold.it/500x300" alt="Projeto 1" />
-                <h3>Projeto 1</h3>
+                <h3>RPG Cyberpunk em c</h3>
                 <p>Descrição do projeto 1</p>
                 <a href="#" class="button" onclick="expandir()">Ver Mais</a>
                 <div id="projeto1" style="display:none;">
                   <p>Descrição completa do projeto 1</p>
-                  <p>Link para o projeto: <a href="#">link</a></p>
+                  <p>Link para o projeto: <a href="#">https://github.com/CassioCavs/Trabalhos-Facul/blob/main/Rpg%20cyberpunk.c</a></p>
                 </div>
               </div>
               <div class="project">
                 <img src="https://placehold.it/500x300" alt="Project 2" />
-                <h3>Projeto 2</h3>
+                <h3>Game Puzzle em c</h3>
                 <p>Descrição do projeto 2</p>
                 <a href="#" class="button" onclick="expandir()">Ver Mais</a>
                 <div id="projeto2" style="display:none;">
                   <p>Descrição completa do projeto 2</p>
-                  <p>Link para o projeto: <a href="#">link</a></p>
+                  <p>Link para o projeto: <a href="#">https://github.com/CassioCavs/Projetos-em-C/blob/main/Game%20puzzle.cpp</a></p>
                 </div>
               </div>
+              <div class="project">
+                <img src="https://placehold.it/500x300" alt="Project 3" />
+                <h3>Criação de um carrro em c++</h3>
+                <p>Descrição do projeto 3</p>
+                <a href="#" class="button" onclick="expandir()">Ver Mais</a>
+                <div id="projeto3" style="display:none;">
+                  <p>Descrição completa do projeto 3</p>
+                  <p>Link para o projeto: <a href="#">https://github.com/CassioCavs/Carro-de-passio-cpp</a></p>
+                </div>
             </div>
+            <div class="project">
+              <img src="https://placehold.it/500x300" alt="Project 4" />
+              <h3>Sistema de deque em c++</h3>
+              <p>Descrição do projeto 4</p>
+              <a href="#" class="button" onclick="expandir()">Ver Mais</a>
+              <div id="projeto2" style="display:none;">
+                <p>Descrição completa do projeto 4</p>
+                <p>Link para o projeto: <a href="#">https://github.com/CassioCavs/Estrutura-de-dados</a></p>
+              </div>
           </div>
         </section>
       
         <section id="about" class="section">
           <div class="container">
-            <img src="Minhafoto.png" alt="Minha foto" />
+            <img src="https://pbs.twimg.com/profile_images/1613590888369852433/m70mX1F0_400x400.jpg" alt="Minha foto" />
             <h2>Sobre Mim</h2>
-            <p>Descrição sobre mim</p>
+            <div>
+              Desde criança, sempre fui fascinado por tecnologia e computadores. Com o passar do tempo, minha curiosidade se transformou em uma verdadeira paixão pela programação. Decidi então me dedicar à área de Engenharia da Computação, buscando aprimorar meus conhecimentos e habilidades.
+              </div>
+              <div>
+              Durante meu tempo na universidade, tenho me dedicado intensamente ao estudo de C e C++, duas linguagens muito utilizadas na área de programação de sistemas operacionais, jogos e outras aplicações. Além disso, tenho buscado aprimorar meus conhecimentos em JavaScript, HTML e CSS, linguagens importantes para o desenvolvimento de aplicações web.
+              </div>
+              <div>
+              Como estudante de Engenharia da Computação, estou sempre em busca de desafios e oportunidades para colocar em prática meu conhecimento e habilidades. Meu objetivo é seguir carreira na área de programação, trabalhando em projetos desafiadores e inovadores.
+              </div>
+              <div>
+              Estou sempre em busca de novos conhecimentos e desafios para me desenvolver profissionalmente e contribuir para a inovação e o progresso tecnológico. Estou ansioso para conhecer novas oportunidades e desafios e estou confiante de que posso fazer uma grande contribuição em qualquer projeto em que eu esteja envolvido.
+              </div>  
           </div>
         </section>
       
@@ -81,7 +110,7 @@
       
       <footer>
         <div class="container">
-          <p>&copy; 2023 Meu Nome</p>
+          <p>&copy; 2023 Cassio Cavalcante</p>
         </div>
       </footer>
       
@@ -89,13 +118,13 @@
       <script>
         function expandir()
         {
-        // Obter o elemento clicado
+        
         let botao = event.target;
 
-        // Obter o elemento irmão seguinte do botão
+        
         let descricaoProjeto = botao.nextElementSibling;
 
-        // Alternar a exibição da descrição do projeto
+        
         if (descricaoProjeto.style.display === "none") {
         descricaoProjeto.style.display = "block";
         botao.innerHTML = "Ver Menos";
